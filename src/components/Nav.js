@@ -16,13 +16,13 @@ const Nav = () => {
             </a>
 
             {/* navbar for mobile devices */}
-            <div>
+            <div className="menu-icon" onClick={toggleMenu}>
                 <div className='bar'></div>
                 <div className='bar'></div>
                 <div className='bar'></div>
             </div>
 
-            <ul>
+            <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
                 <li>
                     <a href="/">Home</a>
                 </li>
